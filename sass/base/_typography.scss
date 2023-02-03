@@ -47,4 +47,24 @@ body {
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
+  transition: all 0.3s;
+  letter-spacing: 2px;
+  &:hover {
+    transform: skewY(2deg);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $def_font;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $def_font;
+  font-weight: 400;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }
